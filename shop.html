@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "HomePageHeader.css">
+    <link rel = "stylesheet" href = "ShopCart.css">
+    <link rel = "stylesheet" href = "ShopBody.css ">
+    <link rel = "stylesheet" href = "HomePageFooter.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ear Me Up | Shop </title>
+</head>
+<body> 
+    <header class = "UpperPart">
+        <div class = "Logo"> 
+            <a href = "Index.html"><img src = "Images/SWave2.png" alt="IndexButton"></a>
+            <h2> EarMe.Up </h2> 
+        </div>
+        
+        <div class = "Navigations">
+            <div class = "Buttons">
+                <button onclick="window.location.href='home.html'"> HOME</button>
+                <button onclick="window.location.href='shop.html'"> SHOP </button>
+                <button onclick="window.location.href='aboutUs.html'"> ABOUT </button>
+                <button onclick="window.location.href='contactUs.html'">  CONTACT </button>
+            </div>
+            <div class = "Search">
+                <form class ="search-form" action="shop.html">
+                    <input type="text" name="q" placeholder="Search...">
+                    <button type="submit"><img class = "SearchImage" src = "Images/Search2.png" alt="Search"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class = "Cart">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+            </svg>     
+            <span>0</span>   
+        </div>
+    </header>
+
+    <section class  = "BodyShop">
+        <div class = "BodyHeader">
+            <h3 > CONNECT 'N PLAY </h3>
+            <h3>UNLEASH YOUR SOUND, ANYWHERE YOU GO</h3>
+        </div>
+        <div class = "Filter">
+            <input type="radio" name="product" value="all" checked onclick="hideProducts('all')"> 
+            <label>All Products</label>
+            <input type="radio" name="product" value="JBL" onclick="hideProducts('JBL')"> 
+            <label> JBL </label>
+            <input type="radio" name="product" value="SONY" onclick="hideProducts('SONY')"> 
+            <label> SONY </label>
+            <input type="radio" name="product" value="RAZER" onclick="hideProducts('RAZER')"> 
+            <label> RAZER </label>
+            <input type="radio" name="product" value="DRE" onclick="hideProducts('DRE')"> 
+            <label> Beats by Dre </label>
+            <input type="radio" name="product" value="APPLE" onclick="hideProducts('APPLE')"> 
+            <label> Apple </label>
+            <input type="radio" name="product" value="BOSE" onclick="hideProducts('BOSE')"> 
+            <label> Bose </label>
+
+        </div>
+        <div class = "ProductContainer">
+            <table id="productTable" class="listProducts">
+                <!-- JBL PRODUCTS -->
+                <tbody class="productSection" data-product="JBL">
+                    <tr class = "ProductImagesRow1">
+                        <td><img src = "Images/JBLProduct1.jpg"></td>
+                        <td><img src = "Images/JBLProduct2.jpg"></td>
+                        <td><img src = "Images/JBLProduct3.jpg"></td>
+                    </tr>
+                    <tr class = "ProductInfoRow1">
+                      <td> 
+                          <h3> JBL Wave Beam </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li> Bring your sound everywhere. With bass  <br> 
+                                      you can feel,up to 32 total hours of <br>
+                                      battery life, and a secure, comfortable  <br>
+                                      stick-closed design, the splash and dust <br> 
+                                      resistant JBL Wave Beam are designed for <br>
+                                      your daily entertainment.
+                                  </li>
+                                  <li class = "PriceID1"> Price: ₱2,849.00 </li>
+          
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/JBLProduct1.jpg', 'JBL Wave Beam', '₱2849.00')"data-base-price="2849.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                      <td> 
+                          <h3> JBL Tour Pro 2 </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>The JBL Tour Pro 2's True Adaptive Noise <br>
+                                      Cancelling technology tunes out <br>
+                                      distractions so you can enjoy your favorite <br>
+                                      audio—or even the sound of silence—all <br>
+                                      powered by legendary JBL Pro Sound and <br> 
+                                      immerse yourself in superb, spatial audio <br>
+                                      on the go. 
+                              </li>
+                                  <li> Price: ₱11,439.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/JBLProduct2.jpg', 'JBL Tour Pro 2', '₱11439.00')"data-base-price="11439.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                      <td> 
+                          <h3> JBL Quantum TWS </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>True Adaptive Noise Cancelling limits <br> 
+                                      distractions as you immerse yourself in <br>
+                                      accurate surround sound. Or, if you need <br>
+                                      to jump backinto the real world, JBL Dual <br> 
+                                      Source lets youswitch from game audio to <br> 
+                                      incoming calls quicklyand easily, while <br>
+                                      Ambient Aware keeps you alert to your <br>
+                                      surroundings.
+                                  </li>
+                                  <li> Price: ₱7,049.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/JBLProduct3.jpg', 'JBL Quantum TWS', '₱7049.00')"data-base-price="7049.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                  </tr>
+                </tbody>
+                
+                <!-- SONY PRODUCTS -->
+                <tbody class="productSection" data-product="SONY">
+                    <tr class = "ProductImagesRow2">
+                        <td><img src = "Images/SonyProduct2.jpg"></td>
+                        <td><img src = "Images/SonyProduct1.jpg"></td>
+                        <td><img src = "Images/SonyProduct3.jpg"></td>
+                    </tr>
+                    <tr class = "ProductInfoRow2">
+                      <td> 
+                          <h3> SONY WF-1000XM4 </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>The WF-1000XM4 truly wireless headphones <br>
+                                      take advanced noise canceling and audio <br>
+                                      quality to the next level. Made to fit <br> 
+                                      every ear, they offer a personalized <br>
+                                      experience that adjusts to every <br>
+                                      situation.
+                                  </li>
+                                  <li> Price: ₱13,999.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/SonyProduct2.jpg', 'SONY WF-1000XM4', '₱13999.00')"data-base-price="13999.00"> ADD TO CART </button>
+                      </td>
+                      <td> 
+                          <h3> SONY LinkBuds S </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>Sony LinkBuds Truly Wireless Earbud <br>
+                                      Headphones with an Open-Ring Design <br>
+                                      for Ambient Sounds and Alexa Built-in, <br>
+                                      Bluetooth Ear Buds Compatible with <br>
+                                      iPhone and Android. They are also <br>
+                                      Sony's smallest and lightest <br>
+                                      noise-canceling earbuds, 40% more <br>
+                                      compact than the flagship WF-1000XM4.
+                                  </li>
+                                  <li> Price: ₱8,999.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/SonyProduct1.jpg', 'SONY LinkBuds S', '₱8999.00')"data-base-price="8999.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                      <td> 
+                          <h3> SONY WF-C500 </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>Small size, uncompromising sound. <br>
+                                      Our WF-C500 truly wireless earbuds are <br>
+                                      designed compact to fit snugly in your ear. <br>
+                                      But don't let their size fool you. They <br>
+                                      deliver high quality sound that's rich <br>
+                                      in detail, thanks to DSEE technology, <br>
+                                      which restores fine fade-out sound <br>
+                                      and high frequency sound.
+                                  </li>
+                                  <li> Price: ₱4,999.00</li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/SonyProduct3.jpg', 'SONY WF-C500', '₱4999.00')"data-base-price="4999.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                  </tr>
+                </tbody>
+          
+                <!-- RAZER PRODUCTS -->
+                <tbody class="productSection" data-product="RAZER">
+                    <tr class = "ProductImagesRow3">
+                        <td><img src = "Images/RazerProduct1.jpg"></td>
+                        <td><img src = "Images/RazerProduct2.jpg"></td>
+                        <td><img src = "Images/RazerProduct3.jpg"></td>
+                    </tr>
+                    <tr class = "ProductInfoRow3">
+                      <td> 
+                          <h3> RAZER Hammerhead <br> True Wireless X  </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li> High-performance earbuds engineered <br>
+                                          to illuminate every beat. Packing a 60 <br>
+                                          ms low latency Gaming Mode along with <br>
+                                          custom-tuned 13 mm drivers, brace <br>
+                                          yourself for audio that rises above <br>
+                                          the noise.
+                                  </li>
+                                  <li> Price: ₱1,949.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/RazerProduct1.jpg','True Wireless X', '₱1949.00')"data-base-price="1949.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                      <td> 
+                          <h3> Razer Hammerhead True <br> Wireless (2nd Generation)  </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>Cutting-edge earbuds destined to dominate <br>
+                                      the soundstage. Designed to dazzle in a <br>
+                                      blaze of RGB glory and decked out with <br>
+                                      ANC and a 60ms low latency Gaming Mode, <br>
+                                      brace your senses for an audio experience <br>
+                                      like never seen before.
+                                  </li>
+                                  <li> ₱2,895.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/RazerProduct2.jpg','True Wireless (2nd Generation)', '₱2895.00')"data-base-price="2895.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                      <td> 
+                          <h3> Razer Hammerhead <br> Pro HyperSpeed </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>Razer HyperSpeed Wireless for gaming <br>
+                                      grade, low latency performance: Delivering <br>
+                                      an ultra-fast 2.4GHz wireless connection <br>
+                                      via its included USB-C dongle, the earbuds <br>
+                                      ensure seamless, low latency audio that <br>
+                                      meets the demands of competitive gaming <br>
+                                      on numerous platforms.
+                                  </li>
+                                  <li> Price: ₱12,179.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/RazerProduct3.jpg','Pro HyperSpeed', '₱12179.00')"data-base-price="12179.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                  </tr>
+                </tbody>
+          
+                <!-- BEATS BY DRE PRODUCTS -->
+                <tbody class="productSection" data-product="DRE">
+                  <tr class = "ProductImagesRow4">
+                      <td><img src = "Images/BBD1.jpg"></td>
+                      <td><img src = "Images/BBD2.jpg"></td>
+                      <td><img src = "Images/BBD3.jpg"></td>
+                  </tr>
+                  <tr class = "ProductInfoRow4">
+                    <td> 
+                        <h3> Beats Studio Buds+  </h3> 
+                        <div class = "Info">
+                            <ul> 
+                                <li>Beats Studio Buds + custom acoustic <br>
+                                    platform packs powerful, balanced <br>
+                                    sound in a sophisticated, pocketable <br>
+                                    design. Reengineered acoustic venting <br>
+                                    improves audio precision and gently <br>
+                                    relieves pressure for a more comfortable <br>
+                                    all-day fit.
+                                </li>
+                                <li> Price: ₱9,490.00 </li>
+                            </ul>
+                            <button class="buyNowBtn" onclick="addToCart('Images/BBD1.jpg','Beats Studio Buds+', '₱9490.00')"data-base-price="9490.00"> ADD TO CART </button>
+                        </div>
+                    </td>
+                    <td> 
+                        <h3> Beats Fit Pro </h3> 
+                        <div class = "Info">
+                            <ul> 
+                                <li>Beats Fit Pro is equipped with comfortable, <br>
+                                    secure-fit wingtips that flex to fit your <br>
+                                    ear. The universal wingtip design was put <br>
+                                    to the ultimate test by athletes of all <br>
+                                    kinds so you can trust these earbuds will <br>
+                                    stay put through work days and workouts.
+                                </li>
+                                <li id = ""> Price: ₱12,599.00 </li>
+                            </ul>
+                            <button class="buyNowBtn" onclick="addToCart('Images/BBD2.jpg','Beats Fit Pro', '₱12599.00')"data-base-price="12599.00"> ADD TO CART </button>
+                        </div>
+                    </td>
+                    <td> 
+                        <h3> Beats Studio Buds </h3> 
+                        <div class = "Info">
+                            <ul> 
+                                <li>Beats Studio Buds are engineered to deliver <br>
+                                    powerful, balanced sound in a compact <br>
+                                    design, through an entirely customised <br>
+                                    acoustic platform. A proprietary, <br>
+                                    dual-element diaphragm driver resides within <br>
+                                    a two-chamber housing, resulting in clear <br>
+                                    sound with outstanding stereo separation.
+                                </li>
+                                <li id = ""> Price: ₱8,490.00 </li>
+                            </ul>
+                            <button class="buyNowBtn" onclick="addToCart('Images/BBD3.jpg','Beats Studio Buds', '₱8490.00')"data-base-price="₱8490.00"> ADD TO CART </button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                
+                <!-- APPLE PRODUCTS -->
+                <tbody class="productSection" data-product="APPLE">
+                    <tr class = "ProductImagesRow5">
+                        <td><img src = "Images/AP1.jpg"></td>
+                        <td><img src = "Images/AP2.jpg"></td>
+                        <td><img src = "Images/AP3.jpg"></td>
+                    </tr>
+                    <tr class = "ProductInfoRow5">
+                      <td> 
+                          <h3> AirPods (2nd generation) </h3>
+                          <div class = "Info"> 
+                              <ul> 
+                                  <li>You have the freedom to wear one or <br>
+                                      both AirPods, and you can play or skip <br> 
+                                      forward with a double-tap when listening <br>
+                                      to music or podcasts. Powered by the Apple <br>
+                                          H1 headphone chip, AirPods use optical <br>
+                                          sensors and motion accelerometers to <br>
+                                          detect when they're in your ears.
+                                  </li>
+                                  <li id = ""> Price: ₱8,490.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/AP1.jpg','AirPods (2nd generation)', '₱8490.00')"data-base-price="8490.00"> ADD TO CART </button>
+                      </td>
+                      <td> 
+                          <h3> AirPods Pro (2nd generation) <br> with MagSafe Charging <br> Case (USB-C) </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>AirPods Pro (2nd generation) with <br>
+                                      USB-C deliver up to 2x more Active Noise <br>
+                                      Cancellation than the previous generation, <br>
+                                      with Transparency mode that enables you to <br>
+                                      hear the world around you, and all-new <br>
+                                      Adaptive Audio that dynamically tailors <br>
+                                      noise control to your environment.</li>
+
+                                  <li id = ""> Price: ₱14,990.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/AP2.jpg','AirPods (2nd generation) with MagSafe Charging Case (USB-C)', '₱14990.00')"data-base-price="8490.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                      <td> 
+                          <h3> AirPods (3rd generation) <br> with MagSafe Charging Case </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>AirPods (3rd generation) are lightweight<br>
+                                      and offer a contoured design. They sit <br>
+                                      at just the right angle for comfort and <br>
+                                      to better direct audio to your ear. The <br>
+                                      stem is 33 percent shorter than AirPods <br>
+                                      (2nd generation) and includes a force <br>
+                                      sensor to easily control music and calls.
+                                  </li>
+                                  <li id = ""> Price: ₱11,990.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/AP2.jpg','AirPods (3rd generation) with MagSafe Charging Case', '₱11990.00')"data-base-price="11990.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                  </tr>
+                </tbody>
+          
+                <!-- BOSE PRODUCTS -->
+                <tbody class="productSection" data-product="BOSE">
+                    <tr class = "ProductImagesRow6">
+                        <td><img src = "Images/BOSEP1.jpg"></td>
+                        <td><img src = "Images/BOSEP2.jpg"></td>
+                        <td><img src = "Images/BOSEP3.jpg"></td>
+                    </tr>
+                    <tr class = "ProductInfoRow6">
+                      <td> 
+                          <h3> Bose Sport Earbuds </h3> 
+                          <div class = "Info">
+                              <ul>
+                                  <li>Bose Sport Earbuds are designed from <br>
+                                      the ground up to energize your exercise <br>
+                                      with acclaimed lifelike sound and a <br>
+                                      comfortable, secure fit. Proprietary <br>
+                                      technologies make your music sound clear <br>
+                                      and balanced, no matter how loud you turn <br>
+                                      it up, while the earbuds' sleek design <br>
+                                      allows them to sit close to your ears.
+                                  </li> 
+                                  <li id = ""> Price: ₱16,900.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/BOSEP1.jpg','Bose Sport Earbuds', '₱16900.00')"data-base-price="16900.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                      <td> 
+                          <h3> Bose QuietComfort <br>     Ultra Earbuds </h3> 
+                          <div class = "Info">
+                              <ul> 
+                                  <li>QuietComfort Ultra Earbuds are the <br>
+                                      ultimate wireless noise cancelling <br>
+                                      earbud experience. Bose Immersive Audio <br>
+                                      pushes the boundary of what it means to <br>
+                                      listen by taking what you're hearing out <br>
+                                      of your head and placing it in front of you. <br>
+                                      It sounds so real it's almost like you <br>
+                                      could reach out and touch it.</li>
+                                  <li id = ""> Price: ₱16,575.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/BOSEP2.jpg','Bose QuietComfort Ultra Earbuds', '₱16575.00')"data-base-price="16575.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                      <td> 
+                          <h3> Bose QuietComfort <br> Earbuds II </h3>
+                          <div class = "Info"> 
+                              <ul> 
+                                  <li>You always get fantastic sound quality <br> 
+                                      because CustomTune technology auto-adjusts <br>
+                                      it to your ears' liking, personalizing <br>
+                                      sound to the shape of your ears for an <br>
+                                      immersive listening experience. Tune out <br>
+                                      in Quiet Mode when you silence background <br>
+                                      noise with our proprietary active noise <br>
+                                      cancelling technology.
+                                  </li>
+                                  <li id = ""> Price: ₱19,500.00 </li>
+                              </ul>
+                              <button class="buyNowBtn" onclick="addToCart('Images/BOSEP3.jpg','Bose QuietComfort Earbuds II', '₱19500.00')"data-base-price="19500.00"> ADD TO CART </button>
+                          </div>
+                      </td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+    </section>
+
+    <aside class="cartTab">
+        <div class = "cartHeader">
+            <h1>SHOPPING CART</h1>
+        </div>
+        <div class ="cartList"></div>
+        <div class ="btn">
+            <button class = "Close"> CLOSE </button>
+            <button class = "Confirm" id="checkoutButton"> CHECKOUT </button>
+        </div>
+    </aside>
+
+    <footer>
+        <section class = "footer">
+            <div class = "FollowUs"> 
+                <h2> FOLLOW US </h2>
+                <div class = "Links">
+                    <a href = "https://www.facebook.com/adrian.zapico.1/" target = "_blank"> Faceboook </a><br>
+                    <a href = "https://www.instagram.com/a1.zap/" target = "_blank"> Instagram </a> <br>
+                    <a href = "https://www.tiktok.com/en/" target = "_blank"> TikTok </a>
+                </div>
+            </div>
+
+            <div class = "Contacts"> 
+                <h2> CONTACTS </h2>
+                <div class = "Info1">
+                    <p> (+63) 9********* </p>
+                    <p> earmeup@gmail.com </p>
+                </div>
+            </div>
+
+            <div class = "Subsrption">
+                
+            </div>
+        </section>
+
+        <div class = "CC">
+            <h6 class = "at"> ©EarMe.Up All Rights Reserved</h6>
+        </div>
+    </footer>
+
+    <script src="CartFunction.js"></script>
+    <script src="Checkout.js"></script>
+    <script src="Search.js"></script>
+</body>
+</html>

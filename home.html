@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "HomePageHeader.css">
+    <link rel = "stylesheet" href = "ShopCart.css">
+    <link rel = "stylesheet" href = "HomePageBody.css">
+    <link rel = "stylesheet" href = "HomePageFooter.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EarMe.Up | Home </title>
+</head>
+<body>
+    <header class = "UpperPart">
+        <div class = "Logo"> 
+            <a href = "Index.html"><img src = "Images/SWave2.png" alt="IndexButton"></a>
+            <h2> EarMe.Up </h2> 
+        </div>
+        
+        <div class = "Navigations">
+            <div class = "Buttons">
+                <button onclick="window.location.href='home.html'"> HOME</button>
+                <button onclick="window.location.href='shop.html'"> SHOP </button>
+                <button onclick="window.location.href='aboutUs.html'"> ABOUT </button>
+                <button onclick="window.location.href='contactUs.html'">  CONTACT </button>
+            </div>
+            <div class = "Search">
+                <form class ="search-form" action="shop.html">
+                    <input type="text" name="q" placeholder="Search...">
+                    <button type="submit"><img class = "SearchImage" src = "Images/Search2.png" alt="Search"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class = "Cart">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+            </svg>     
+            <span>0</span>   
+        </div>
+    </header>
+
+    <section class = "Tagline">
+        <h1 class = "TaglineText" > CONNECT 'N PLAY </h1>
+        <h6 class = "LowerText"> UNLEASH YOUR SOUND, ANYWHERE YOU GO </h6>
+    </section>
+
+    <section class = FeaturedP>
+        <h1 class = "FPTitle"> Featured Products </h1>
+        <table class = Products>
+            <tr class = "FPImages">
+                <td><div class = "Item">
+                    <img class = ImageP2 src = "Images/JBLProduct1.jpg">
+                    <div class = "MainI">
+                        <a href = "https://jblstore.com.ph/products/jbl-wave-beam-true-wireless-earbuds-bluetooth"target="_blank "><h3> BUY HERE! </h3></a>
+                    </div>
+                </div></td>
+
+                <td><div class = "Item">
+                    <img class = ImageP1 src = "Images/RazerProduct1.jpg">
+                    <div class = "MainI">
+                        <a href = "https://www.lazada.com.ph/products/razer-hammerhead-true-wireless-x-earbuds-black-i2192597886-s9850383820.html" target="_blank "><h3> BUY HERE! </h3></a>
+                    </div>
+                </div></td>
+
+                <td><div class = "Item">
+                    <img class = ImageP3 src = "Images/SonyProduct2.jpg">
+                    <div class = "MainI">
+                        <a href = "https://www.sony.com.ph/headphones/products/wf-1000xm4" target="_blank "><h3> BUY HERE! </h3></a>
+                    </div>
+                </div></td>
+            </tr>
+            <tr class = "FPNames">
+                <td> JBL WAVE BEAM </td>        
+                <td> RAZER HAMMERHEAD <br> TRUE WIRELESS X </td>
+                <td> SONY WF-1000XM4 </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class = "Info">
+        <div class = "InfoHeader">
+            <h1> BRANDS </h1> 
+            <h5> Our Affiliate Partnerships With Leading Brands In The Audio Industry </h5>
+        </div>
+        <table class = "Brands">
+            <tr class = "ProductNames"> 
+                <th> JBL </th>
+                <th> SONY </th>
+                <th> RAZER </th>
+            </tr>
+            <tr>
+                <td>
+                    <iframe width="340" height="200" src="https://www.youtube.com/embed/KCeR3oQQ1hM" title="JBL | Wave 200TWS | True Wireless Earbuds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h6> Courtesy: JBL Youtube Channel </h6> 
+                </td>
+                <td>
+                    <iframe width="340" height="200" src="https://www.youtube.com/embed/J01z1YNy3IE" title="WF-1000XM5 x Miguel | Official Ad | NEW Noise Cancelling Headphones | Sony" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h6> Courtesy: SONY Youtube Channel </h6> 
+                </td>
+                <td>
+                    <iframe width="340" height="200" src="https://www.youtube.com/embed/Z1Nj4OV-0vs" title="Razer Hammerhead True Wireless | Light Up Your Immersion" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h6> Courtesy: Razer Youtube Channel </h6> 
+                </td>
+            </tr>
+            <tr class = "ProductNames"> 
+                <th> BEATS BY DRE </th>
+                <th> APPLE </th>
+                <th> BOSE </th>
+            </tr>
+            <tr>
+                <td>
+                    <iframe width="340" height="200" src="https://www.youtube.com/embed/Dd1VIeTMGQs" title="Beats By Dre | Powerbeats Pro | Unleashed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h6> Courtesy: Beats By Dre Youtube Channel </h6> 
+                </td>
+                <td>
+                    <iframe width="340" height="200" src="https://www.youtube.com/embed/ql6mhhHCldY" title="AirPods Pro | Adaptive Audio. Now playing. | Apple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h6> Courtesy: Apple Youtube Channel</h6> 
+                </td>
+                <td>
+                    <iframe width="340" height="200" src="https://www.youtube.com/embed/G_PnuL7hnf0" title="Bose QuietComfort® Earbuds II | The Good Guys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h6> Courtesy: Bose Youtube Channel </h6> 
+                </td>
+            </tr>
+        </table>   
+        <section class = "Audio">
+            <h2>Test Your Earbuds Here:</h2> <br>
+            <div class = "AudioTester">
+                <audio controls>
+                    <source src="Audio/SoundDemo.mp3" type="audio/mp3">
+                </audio>
+                <h6> Courtesy: Dolby </h6> 
+            </div>  
+        </section>
+    </section>
+
+    <aside class="cartTab">
+        <div class = "cartHeader">
+            <h1>SHOPPING CART</h1>
+        </div>
+        <div class ="cartList"></div>
+        <div class ="btn">
+            <button class = "Close"> CLOSE </button>
+            <button class = "Confirm" id="checkoutButton"> CHECKOUT </button>
+        </div>
+    </aside>
+
+  
+    <footer>
+        <section class = "footer">
+            <div class = "FollowUs"> 
+                <h2> FOLLOW US </h2>
+                <div class = "Links">
+                    <a href = "https://www.facebook.com/adrian.zapico.1/" target = "_blank"> Faceboook </a><br>
+                    <a href = "https://www.instagram.com/a1.zap/" target = "_blank"> Instagram </a> <br>
+                    <a href = "https://www.tiktok.com/en/" target = "_blank"> TikTok </a>
+                </div>
+            </div>
+
+            <div class = "Contacts"> 
+                <h2> CONTACTS </h2>
+                <div class = "Info1">
+                    <p> (+63) 9********* </p>
+                    <p> earmeup@gmail.com </p>
+                </div>
+            </div>
+
+            <div class = "Subsrption">
+                
+            </div>
+        </section>
+
+        <div class = "CC">
+            <h6 class = "at"> ©EarMe.Up All Rights Reserved</h6>
+        </div>
+    </footer>
+
+    <script src="CartFunction.js"></script>
+    <script src="Checkout.js"></script>
+    <script src="Search.js"></script>
+</body>
+</html>
+
+

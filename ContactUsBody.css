@@ -1,0 +1,184 @@
+.ContactUs {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+}
+
+.ContactUs .HeaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background: rgba(0, 0, 0, .8) url(Images/CheckoutBG.jpg);
+    background-blend-mode: color;
+    background-size: 100%;
+    background-position: center;
+}
+.ContactUs .Header{
+    text-align: center;
+    font-family: "GTRFont";
+    font-size: 4rem;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    animation: SlideU .5s ease-in;
+}
+
+.Map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+
+.Map div iframe {
+    margin: 10px 0px 50px 0px;
+    scale: 10px;
+}
+
+.Map .MapDetails h3 {
+    font-family: "GTRFont";
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.Details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Details h3 {
+    font-family: "GTRFont";
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.Details p {
+    font-size: 1.5rem;
+}
+
+.Details .Below {
+    margin: 150px;
+    display: flex;
+}
+
+.Details .Below div {
+    margin: 0px 200px;
+}
+
+.MsgBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+}
+
+.Container h1 {
+    font-family: "GTRFont";
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Container form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.Container input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.Container textarea{
+    height: 50%;
+    resize: vertical;
+}
+
+.Container .Button {
+    text-align: center;
+}
+
+.Container button {
+    background-color: #313131;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Container button:hover {
+    background-color: #707070;
+}
+
+/* Popup styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content p{
+    font-size: 1.1rem;
+}
+
+.popup-content .popup-Logo {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content .popup-Logo h2{
+    font-family: "GTRFont";
+    font-size: 15px;
+    margin: 0px 10px 20px 10px;
+}
+
+.popup-content .popup-Logo img{
+    width: 15px;
+    height: 15px;
+}
