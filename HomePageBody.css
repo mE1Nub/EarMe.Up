@@ -166,3 +166,12 @@
     color: rgb(44, 44, 44);
 }
 
+@media screen and (max-width: 1300px) {
+    .TaglineText {
+        font-size: 3rem;
+    }
+
+    .LowerText {
+        font-size: 1rem;
+    }
+}
