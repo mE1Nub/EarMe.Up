@@ -122,7 +122,15 @@ body {
     font-size: 2rem;
 }
 
+@media screen and (max-width: 1300px) {
+    .TaglineText {
+        font-size: 4rem;
+    }
 
+    .LowerText {
+        font-size: 1rem;
+    }
+}
 
 
 
