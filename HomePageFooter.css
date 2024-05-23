@@ -1,0 +1,104 @@
+footer {
+    width: 100%;
+    background: rgba(0, 0, 0, .5) url('Images/IndexBG.jpg');
+    background-blend-mode: color;
+    background-position: bottom;
+    background-size: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.FollowUs {
+    text-align: center;
+    margin-right: 200px;
+    margin-bottom: 10px;
+}
+
+.FollowUs h2 {
+    margin-bottom: 10px;
+}
+
+.Links a {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    margin: 0px 5px;
+}
+
+.Links a:hover {
+    transition: .3s;
+    color: white;
+}
+
+.Contacts {
+    margin-right: 200px;
+}
+
+.Info1 p {
+    display: flex;
+    line-height: 30px;
+}
+
+.Fillup form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footerInput-group {
+    display: flex;
+}
+
+.footerInput-group label {
+    display: block;
+    margin: 5px 0px;
+}
+
+.footerInput-group input {
+    margin-right: 10px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Fillup button {
+    margin-top: 10px;
+    background-color: #303030;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Fillup button:hover {
+    background-color: #4d4d4d;
+}
+
+.CC {
+    background: linear-gradient(#050505, black);
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: 150%;
+    height: 60px;
+    color: rgba(255, 255, 255, 0.684);
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

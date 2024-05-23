@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.AboutUsInfo .Title {
+    background: rgba(0, 0, 0, .8) url('Images/AboutUsBG.jpg');
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 70px;
+    height: 300px;
+}
+
+.AboutUsInfo .Title .BodyHeader {
+    font-size: 4rem;
+    font-family: "GTRFont";
+    text-align: center;
+    padding: 100px 0px 40px 0px;
+    animation: SlideU .5s ease-in;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    transition: .7s;
+}
+
+.Information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 500px;
+}
+
+.InfoContainer1 {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#3b1615, #80312d);
+}
+
+.InfoPic {
+    background: url('Images/BusinessInfoPicture.jpg');
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center calc(60% - 10px);
+}
+
+.Founder {
+    display: flex;
+}
+
+.Founder p{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.Information .InfoContainer1 .InformationHeader{
+    text-align: center;
+    margin: 15px 0px 20px 0px;
+}
+
+.Information .InfoContainer1 .InformationHeader h2{
+    font-family: "GTRFont";
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+}  
+ 
+.Information .InfoContainer1 .InformationHeader img{
+    width: 20px;
+    height: 20px;
+}
+
+.Information .InfoContainer1 p {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+}
+
+.AboutUsBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 700px;
+}
+.BodyContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#3b1615, #80312d);
+}
+
+.BodyContent h2 {
+    font-family: "GTRFont";
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.BodyContent ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 35px;
+}
+
+.BodyContent li {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.AboutUsBody aside .Product1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7) url(Images/JBLbg.jpg);
+    background-blend-mode: color;
+    background-position: center;
+    background-size: 100%;
+    height: 116px;
+    font-family: "GTRFont";
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.AboutUsBody aside .Product2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7) url(Images/SONYbg.jpg);
+    background-blend-mode: color;
+    background-position: center;
+    background-size: 100%;
+    height: 117px;
+    font-family: "GTRFont";
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.AboutUsBody aside .Product3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7) url(Images/RAZERbg.jpg);
+    background-blend-mode: color;
+    background-position: center;
+    background-size: 100%;
+    height: 117px;
+    font-family: "GTRFont";
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.AboutUsBody aside .Product4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7) url(Images/BEATSbg.jpg);
+    background-blend-mode: color;
+    background-position: center calc(40% - 10px);
+    background-size: 100%;
+    height: 117px;
+    font-family: "GTRFont";
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.AboutUsBody aside .Product5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7) url(Images/APPLEbg.jpg);
+    background-blend-mode: color;
+    background-position: center calc(40% - 10px);
+    background-size: 100%;
+    height: 117px;
+    font-family: "GTRFont";
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.AboutUsBody aside .Product6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7) url(Images/BOSEbg.jpg);
+    background-blend-mode: color;
+    background-position: center calc(40% - 10px);
+    background-size: 100%;
+    height: 116px;
+    font-family: "GTRFont";
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.Update {
+    background: rgba(0, 0, 0, .5) url('Images/AboutUsBG.jpg');
+    background-blend-mode: color;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 50px 0px;
+}
+
+@media screen and (max-width: 1300px) {
+    .AboutUsInfo .Title .BodyHeader {
+        font-size: 3rem;
+    }
+    .InfoPic {
+        background-size: 140%;
+        background-position: center;
+    }
+
+    .Information .InfoContainer1 .InformationHeader h2{
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+        font-size: 2cqw;
+    }  
+     
+    .Information .InfoContainer1 .InformationHeader img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .Information .InfoContainer1 p {
+        margin-bottom: 40px;
+        font-size: 1rem;
+    }
+
+    .BodyContent h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .BodyContent ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 1.5;
+        padding-left: 35px;
+    }
+    
+    .BodyContent li {
+        padding-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .AboutUsBody aside .Product1, 
+    .AboutUsBody aside .Product2,
+    .AboutUsBody aside .Product3,
+    .AboutUsBody aside .Product4,
+    .AboutUsBody aside .Product5,
+    .AboutUsBody aside .Product6{
+        font-size: 2rem;
+    }
+}
