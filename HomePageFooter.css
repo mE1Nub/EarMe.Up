@@ -1,5 +1,4 @@
 footer {
-    width: 100%;
     background: rgba(0, 0, 0, .5) url('Images/IndexBG.jpg');
     background-blend-mode: color;
     background-position: bottom;
@@ -7,7 +6,6 @@ footer {
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    padding-top: 20px;
 }
 
 .footer {
@@ -15,6 +13,7 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    padding-top: 20px;
 }
 
 .FollowUs {
